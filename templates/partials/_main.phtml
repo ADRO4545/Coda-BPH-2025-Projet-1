@@ -1,0 +1,22 @@
+<main>
+    <?php
+    $choice = $_GET["choice"] ?? null;
+    if ($choice >= 1 && $choice <= 37) {
+
+        $path = "templates/partials/_choix{$choice}.phtml";
+            require $path;
+        }
+    elseif ($choice =='victoire'){
+        require "templates/partials/_victoire.phtml";
+    }
+    elseif ($choice =='bad-end'){
+        require "templates/partials/_bad-end.phtml";
+    }
+    elseif ($choice =='fin-neutre'){
+        require "templates/partials/_fin-neutre.phtml";
+    }
+    else {
+        require "templates/partials/_homesweethome.phtml";
+    }
+    ?>
+</main>

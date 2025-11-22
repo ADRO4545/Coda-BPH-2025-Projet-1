@@ -1,0 +1,80 @@
+:root {
+    --violet-principal: #5D3FD3;
+    --violet-accent: #8A2BE2;
+    --fond-clair: #F8F8FF;
+    --texte-fonce: #333333;
+    --contenu-fond: #FFFFFF;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--fond-clair);
+    color: var(--texte-fonce);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: var(--contenu-fond);
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: var(--violet-principal);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: var(--violet-principal);
+    border-bottom: 2px solid var(--fond-clair);
+    padding-bottom: 10px;
+}
+
+.choix {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: block;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--violet-principal);
+    border: 2px solid var(--violet-principal);
+    transition: all 0.3s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: var(--violet-accent);
+    border-color: var(--violet-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #666;
+}
