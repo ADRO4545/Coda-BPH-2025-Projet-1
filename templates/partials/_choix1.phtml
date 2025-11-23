@@ -1,11 +1,21 @@
 <h2>Alerte en pleine nuit</h2>
-<p>Vous pilotez un Airbus A321 de la compagnie ibéria entre Orly et Barcelone, par une météo stable sans turbulences. Soudain, une alerte retentit : "TRAFIC ! TRAFIC !" <br>
-Votre copilote pointe l'écran radar : "Avion non identifié se dirige droit sur nous ! Le TCAS ordonne de descendre !" <br> 
+<p>Vous pilotez un Airbus A321 de la compagnie ibéria entre Orly et Barcelone, par une météo stable sans turbulences.
+Soudain, une alerte retentit : "TRAFIC ! TRAFIC !" <br>
+Votre copilote pointe l'écran radar : "Avion non identifié se dirige droit sur nous ! Le TCAS ordonne de descendre !"
+<br> 
 "DESCEND ! DESCEND NOW ! "</p>
 
 <div class="choix">
-    <a href="index.php?choice=2" class="btn">Obéir et plonger immédiatement</a>
-    <a href="index.php?choice=3" class="btn">Contacter la tour de contrôle pour confirmation</a>
-    <a href="index.php?choice=21" class="btn">Tenter de visualiser l'avion intrus par le hublot</a>
-    <a href="index.php?choice=bad-end" class="btn">Ignorer l'alerte</a>
+    <form action="index.php" method="get">
+        <button type="submit" name="choice" value="2" class="btn">Obéir et plonger immédiatement</button>
+    </form>
+    <form action="index.php" method="get">
+        <button type="submit" name="choice" value="3" class="btn">Contacter la tour de contrôle pour confirmation</button>
+    </form>
+    <form action="index.php" method="get">
+        <button type="submit" name="choice" value="21" class="btn">Tenter de visualiser l'avion intrus par le hublot</button>
+    </form>
+    <form action="index.php" method="get">
+        <button type="submit" name="choice" value="bad-end" class="btn">Ignorer l'alerte</button>
+    </form>
 </div>
